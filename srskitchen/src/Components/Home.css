@@ -7,11 +7,6 @@
 /* Hero section */
 .hero {
   height: 80vh;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://images.unsplash.com/photo-1604909052743-94e838986d24");
   background-size: cover;
   background-position: center;
   display: flex;

@@ -17,11 +17,14 @@ const Header = () => {
          <Link to="/contact" className="item">
           Contact Us
         </Link>
-        <div className="item">
+        <Link to="/" className="item">
+          Home
+        </Link>
+        {/* <div className="item">
           <button className="ui green button">
             Login
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

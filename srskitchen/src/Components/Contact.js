@@ -1,10 +1,10 @@
 import "./Contact.css";
-
+import cont from "../images/contact.jpeg";
 function Contact() {
   return (
     <div className="contact">
       {/* Hero */}
-      <div className="contact-hero">
+      <div className="contact-hero" style={{  backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${cont})`}}>
         <h1>Contact Us</h1>
         <p>We’d love to hear from you. Reach out anytime.</p>
       </div>

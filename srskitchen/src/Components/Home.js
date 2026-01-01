@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import bg from "../images/bg.jpeg";
 
 const Home = () => {
   return (
     <div className="home">
       {/* Hero Section */}
-      <div className="hero">
+      <div className="hero" style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${bg})`}}>
         <div className="hero-content">
           <h1>SRS Kitchen</h1>
           <p>

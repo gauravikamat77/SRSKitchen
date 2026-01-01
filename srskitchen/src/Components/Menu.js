@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Menu.css";
+import placeholder from "../images/placeholder.jpeg";
+import menuBg from "../images/menupagebg.jpg";
 
 
 const pages = [
@@ -7,24 +9,24 @@ const pages = [
     left: {
       title: "Dry Starters",
       items: [
-        { name: "Chicken Ghee Roast", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Chilly Fry (Goan)", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Cafreal", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Pepper Chicken Fry", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Chukka", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Squid Chilly Fry (Goan)", price: "1000/-kg", img: "/images/placeholder.jpg" },
+        { name: "Chicken Ghee Roast", price: "850/-kg", img: placeholder },
+        { name: "Chicken Chilly Fry (Goan)", price: "850/-kg", img: placeholder },
+        { name: "Chicken Cafreal", price: "850/-kg", img: placeholder },
+        { name: "Pepper Chicken Fry", price: "850/-kg", img: placeholder },
+        { name: "Chicken Chukka", price: "850/-kg", img: placeholder },
+        { name: "Squid Chilly Fry (Goan)", price: "1000/-kg", img: placeholder },
       ],
     },
     right: {
       title: "Dry Starters",
       items: [
-        { name: "Chicken Chanka", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Charsic Chicken Karahi", price: "900/-kg", img: "/images/placeholder.jpg" },
-        { name: "Butterfly Chicken (Boneless)", price: "500/- 0.5kg | 900/-kg", img: "/images/placeholder.jpg" },
-        { name: "Threaded Chicken (Boneless)", price: "500/- 0.5kg | 900/-kg", img: "/images/placeholder.jpg" },
-        { name: "Honey Garlic Chicken (Boneless)", price: "900/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Rawa Fry (Boneless)", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Dry Fry", price: "800/-kg", img: "/images/placeholder.jpg" },
+        { name: "Chicken Chanka", price: "850/-kg", img: placeholder },
+        { name: "Charsic Chicken Karahi", price: "900/-kg", img: placeholder },
+        { name: "Butterfly Chicken (Boneless)", price: "500/- 0.5kg | 900/-kg", img: placeholder },
+        { name: "Threaded Chicken (Boneless)", price: "500/- 0.5kg | 900/-kg", img: placeholder },
+        { name: "Honey Garlic Chicken (Boneless)", price: "900/-kg", img: placeholder },
+        { name: "Chicken Rawa Fry (Boneless)", price: "850/-kg", img: placeholder },
+        { name: "Chicken Dry Fry", price: "800/-kg", img: placeholder },
       ],
     },
   },
@@ -33,18 +35,18 @@ const pages = [
     left: {
       title: "Gravy",
       items: [
-        { name: "Chicken Xacuti", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Malvani Chicken", price: "900/-kg", img: "/images/placeholder.jpg" },
-        { name: "Afgani Chicken", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Angara", price: "850/-kg", img: "/images/placeholder.jpg" },
-        { name: "Chicken Sukka", price: "900/-kg", img: "/images/placeholder.jpg" },
+        { name: "Chicken Xacuti", price: "850/-kg", img: placeholder },
+        { name: "Malvani Chicken", price: "900/-kg", img: placeholder },
+        { name: "Afgani Chicken", price: "850/-kg", img: placeholder },
+        { name: "Chicken Angara", price: "850/-kg", img: placeholder },
+        { name: "Chicken Sukka", price: "900/-kg", img: placeholder },
       ],
     },
     right: {
       title: "Rice",
       items: [
-        { name: "Chicken Dum Biryani", price: "950/-kg", img: "/images/placeholder.jpg" },
-        { name: "Prawns Tawa Pulav", price: "1000/-kg", img: "/images/placeholder.jpg" },
+        { name: "Chicken Dum Biryani", price: "950/-kg", img: placeholder },
+        { name: "Prawns Tawa Pulav", price: "1000/-kg", img: placeholder },
       ],
     },
   },
@@ -58,7 +60,8 @@ export default function Menu() {
     <div className="menu-wrapper">
       <div className="book">
         {/* LEFT PAGE */}
-        <div className="page left">
+        <div className="page left" style={{ backgroundImage: `url(${menuBg})`}}>
+          <div className="page-content">
           <h2>{pages[page].left.title}</h2>
           {pages[page].left.items.map((item, i) => (
             <div className="dish" key={i}>
@@ -70,9 +73,11 @@ export default function Menu() {
             </div>
           ))}
         </div>
-
+        </div>
+        
         {/* RIGHT PAGE */}
-        <div className="page right">
+        <div className="page right" style={{ backgroundImage: `url(${menuBg})`}}>
+          <div className="page-content">
           <h2>{pages[page].right.title}</h2>
           {pages[page].right.items.map((item, i) => (
             <div className="dish" key={i}>
@@ -84,6 +89,7 @@ export default function Menu() {
             </div>
           ))}
         </div>
+      </div>
       </div>
 
       <div className="controls">
