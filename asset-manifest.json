@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/srskitchen/static/css/main.aa35d7c9.css",
+    "main.js": "/srskitchen/static/js/main.772a80ea.js",
+    "static/media/contact.jpeg": "/srskitchen/static/media/contact.ef9a07f939649952a2b7.jpeg",
+    "static/media/bg.jpeg": "/srskitchen/static/media/bg.b730d5066c767a798cc8.jpeg",
+    "static/media/menupagebg.jpg": "/srskitchen/static/media/menupagebg.49ec4ff114ed65f2347e.jpg",
+    "static/media/placeholder.jpeg": "/srskitchen/static/media/placeholder.18f21f69d8ee5013ffbc.jpeg",
+    "index.html": "/srskitchen/index.html",
+    "main.aa35d7c9.css.map": "/srskitchen/static/css/main.aa35d7c9.css.map",
+    "main.772a80ea.js.map": "/srskitchen/static/js/main.772a80ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa35d7c9.css",
+    "static/js/main.772a80ea.js"
+  ]
+}
