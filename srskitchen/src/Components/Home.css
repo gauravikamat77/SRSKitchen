@@ -1,0 +1,91 @@
+/* Overall page */
+.home {
+  margin-top: 60px; /* for fixed header */
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Hero section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1604909052743-94e838986d24");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 20px;
+  background: #f4f7f8;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  color: #27ae60;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .ui.button {
+    width: 80%;
+    max-width: 280px;
+  }
+}
